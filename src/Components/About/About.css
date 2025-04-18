@@ -11,7 +11,13 @@
     position: relative;
     text-align: center; /* Center the title */
 }
-
+.about-left img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover; /* Ensures it fills the space nicely */
+    border-radius: 12px;  /* Optional: smooth corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+  }
 .about-title h1 {
     padding: 0px 30px;
     font-size: 80px;

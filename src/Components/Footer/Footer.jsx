@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import footer_logo from '../../assets/footer_logo.svg'
+import footer_logo from '../../assets/200.png'
 import user_icon from '../../assets/user_icon.svg'
 
 
@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='footer'>
         <div className="footer-top">
             <div className="footer-top-left">
-                <img src={footer_logo} alt="" />
+                <img src={footer_logo } alt="" />
                 <p>I'm a passionate Full Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js).</p>
             </div>
             <div className="footer-top-right">

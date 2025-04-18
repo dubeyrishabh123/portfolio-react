@@ -2,12 +2,61 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    padding: 20px 100px;
     position: relative;
     z-index: 10;
+  }
+  
+  .navbar img {
+    height: 120px;         /* Increased height */
+    width: auto;
+    max-width: 260px;      /* Optional: widen logo if needed */
+    margin-right: 80px;    /* Creates distance from next navbar item */
+    cursor: pointer;
+    object-fit: contain;
+  }
+/* Menu list */
+
+/* Ensure anchor link behaves like a block for easier styling */
+.anchor-link {
+    display: inline-block; /* Makes it behave like a block but only as wide as its content */
+    text-decoration: none;
+    color: white;
+    position: relative; /* Needed for positioning the underline */
 }
 
-/* Menu list */
+/* Remove default margins or paddings from p inside AnchorLink */
+.anchor-link p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px; /* Ensure the font size is consistent */
+    cursor: pointer; /* Ensure cursor is pointer for clicking */
+}
+
+/* Underline styling */
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li img {
+    display: flex;
+    margin: auto;
+}
+
+.nav-menu li img {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-menu li.active img {
+    width: 60%; /* Adjust underline size */
+    left: 20%; /* Center it */
+}
 .nav-menu {
     display: flex;
     align-items: center;
@@ -60,6 +109,9 @@
 
     .nav-connect {
         display: none;
+    }
+    .navbar img{
+          display: none;
     }
 
     .nav-mob-icon {
